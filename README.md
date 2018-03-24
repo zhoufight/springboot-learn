@@ -29,4 +29,37 @@ spring boot作为一款简便的框架，一开始的初衷就是为了简化spr
 	}
 ```
 
-六、详细代码见文件夹2018-03-24/imgr
+六、详细代码见文件夹2018-03-24/helloworld/imgr
+
+## 多环境配置
+
+在项目的开发中，需要根据不同的环境进行不同的配置，例如开发环境、测试环境以及正式环境等，都需要配置不同的内容。spring boot提供了多环境配置的功能，在配置文件application.properties中配置`spring.profiles.active=dev`然后新增一个配置文件，名称如"application-dev.properties"，即可在里面进行配置。如果需要切换到另外的环境，只需要改变`spring.profiles.active`的值，同时新增相对应的文件即可。
+
+## 热部署
+
+在spring boot中，熱部署是一件非常简单的事，只需要配置一下即可完成热部署的功能，热部署有两种方式(热部署都需要开启自动编译)：
+
+一、devtools
+只需要在pom.xml中加上devtools的依赖即可，如下：
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-devtools</artifactId>
+	<optional>true</optional>
+	<scope>true</scope>
+</dependency>
+```
+使用devtools用一个缺点，就是在实际项目开发中，项目重新加载，如果存在登录页面，需要重新登录系统。
+
+二、springloaded
+在pom.xml中加上依赖，如下：
+```
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>springloaded</artifactId>
+</dependency>
+```
+同时如果有开启devtools的，需要将devtools的依赖注释或者在配置文件中通过`spring.devtools.restart.enabled=false`配置devtools不起作用。
+要让springloaded起作用，还需要使用debug模式来运行项目或者用maven命令`maven spring-boot:run`来启动。(备注：该热部署对于新增的mapping无效)
+
+三、详细代码见文件夹2018-03-24/热部署/imgr
