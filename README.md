@@ -137,3 +137,53 @@ package命令会将打包好的jar包放到target目录下:`mvn package`
 `mvn package -Dmaven.test.skip=true`
 或者
 `mvn package -DskipTests`
+
+## 注解与aop
+
+借助注解和aop可以实现一些很方便的功能，例如记录日志。
+以下用一个简单的例子说明一下aop的工作过程。
+
+一、定义注解
+```
+@Target({ElementType.METHOD})    //注解的目标
+@Retention(RetentionPolicy.RUNTIME)	//注解执行的时间，这里是运行的时候x
+public @interface LogAnno {
+	
+}
+```
+
+二、定义逻辑代码
+```
+@Aspect
+@Component
+public class LogAop {
+	
+	private Logger log = LoggerFactory.getLogger(this.getClass());
+	//切点
+	@Pointcut(value = "@annotation(com.shotq.imgr.aop.LogAnno)")
+	public void service() {}
+	
+	@Around("service()")
+	public void runMathod(ProceedingJoinPoint point) throws Throwable {
+		Object result = point.proceed(); 	//业务代码执行
+		MethodSignature ms = (MethodSignature) point.getSignature();
+		Method method = ms.getMethod();
+		log.info("执行方法："+method.getName());
+	}
+}
+```
+
+
+三、使用注解
+```
+@RestController
+public class HelloController {
+	private Logger log = LoggerFactory.getLogger(this.getClass());
+	@RequestMapping("/")
+	@LogAnno
+	public String hello() {
+		log.info("HelloController.hello");
+		return "Hello World!";
+	}
+}
+```
