@@ -127,9 +127,11 @@ logback.xml的配置
 三、代码见文件夹2018-03-24/日志/imgr
 
 ## maven命令
+
 一、install与package的区别
 install命令会将打包好的jar包放到本地的仓库:`mvn install`
 package命令会将打包好的jar包放到target目录下:`mvn package`
+
 二、忽略测试代码
 通过设置参数可以在打包v奥的时候忽略测试代码的部分
 `mvn package -Dmaven.test.skip=true`
