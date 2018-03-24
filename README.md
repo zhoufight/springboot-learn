@@ -63,3 +63,20 @@ spring boot作为一款简便的框架，一开始的初衷就是为了简化spr
 要让springloaded起作用，还需要使用debug模式来运行项目或者用maven命令`maven spring-boot:run`来启动。(备注：该热部署对于新增的mapping无效)
 
 三、详细代码见文件夹2018-03-24/热部署/imgr
+
+## 部署
+spring boot项目可以通过jar包或者war包的方式进行部署，由于spring boot已经集成了tomcat，所以通过jar包就可以打包部署，这里主要介绍jar包的部署方式，war包的部署方式以后再介绍。
+其中环境：虚拟机CentOS
+一、打包
+打包的方式有两种，一种直接用maven命令打包，另一种为在IDE中用maven命令打包。
+右键项目->`Run As` -> `Maven Build...` ->输入打包命令`package`即可打包完成。
+
+二、上传到服务器
+在xshell中通过rz命令将jar包通过ftp上传到服务器。
+
+三、启动项目
+1、在linux中可以通过命令`java -jar imgr.jar`命令启动应用。使用以上命令可以启动应用，但是当用户退出shell窗口或者使用`clear`命令清屏的时候，应该也会关闭。
+2、使用命令`nohup java -jar imgr.jar &`命令可以解决以上的问题
+3、为了停止应用更加方便，可以使用命令`echo $!`来记录每一次的应用进程id。
+
+四、命令脚本见文件夹2018-03-24/部署/start.sh
