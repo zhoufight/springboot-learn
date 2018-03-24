@@ -80,3 +80,48 @@ spring boot项目可以通过jar包或者war包的方式进行部署，由于spr
 3、为了停止应用更加方便，可以使用命令`echo $!`来记录每一次的应用进程id。
 
 四、命令脚本见文件夹2018-03-24/部署/start.sh
+
+## 日志
+spring boot中直接内置了slf4j的日志包，可以直接使用使用方式如下:
+```
+@RestController
+public class HelloController {
+	
+	private Logger log = LoggerFactory.getLogger(this.getClass());
+
+	@RequestMapping("/")
+	public String hello() {
+		log.info("HelloController.hello");
+		return "Hello World!";
+	}
+}
+```
+如果需要配置日志log的打印方式，可以通过applcation.properties或者logback.xml的方式配置（以下只记述最基本的用法）
+
+一、application.properties
+```
+#log日志的路径
+logging.file=./log/imgr.log
+```
+
+二、logback.xml
+application.properties的配置
+```
+#log
+#配置logback
+logging.config=classpath:logback.xml
+#log日志的路径
+logging.file=./log/imgr.log
+```
+logback.xml的配置
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- 使用默认的样式 -->
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <!-- 打印的level -->
+    <logger name="org.springframework.web" level="INFO"/>
+</configuration>
+```
+
+三、代码见文件夹2018-03-24/日志/imgr
