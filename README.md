@@ -262,3 +262,83 @@ public class BeetlConfig {
 其中，可以通过配置GroupTemplate来获得一些自定义的东西，例如方法等，在权限管理或者一些特定的方法上可以使用这个注册方法，使得该方法可以在前端页面使用。
 
 三、详细代码见文件夹2018-03-31\模板\beetl\imgr
+
+## 验证码
+
+一个网站，通常必不可少的内容就是登录页面，而为了安全，能够区分机器和人，通常都会有验证码。以下就是springboot集成kcaptcha验证码的过程。
+
+一、导入kcaptcha包
+```
+<dependency>
+    <groupId>com.github.penggle</groupId>
+    <artifactId>kaptcha</artifactId>
+    <version>2.3.2</version>
+</dependency>
+```
+
+二、配置kcaptcha
+```
+@Bean
+public DefaultKaptcha katchaConf() {
+	DefaultKaptcha defaultKaptcha = new DefaultKaptcha();
+	Properties properties = new Properties();
+	properties.setProperty("kaptcha.border", "no");
+	properties.setProperty("kaptcha.border.color", "105,179,90");
+	properties.setProperty("kaptcha.textproducer.font.color", "red");
+	properties.setProperty("kaptcha.image.width", "100");
+	properties.setProperty("kaptcha.image.height", "36");
+	properties.setProperty("kaptcha.textproducer.font.size", "30");
+	properties.setProperty("kaptcha.session.key", "code");
+	properties.setProperty("kaptcha.textproducer.char.length", "4");
+	properties.setProperty("kaptcha.textproducer.font.names", "宋体,楷体");
+	Config config = new Config(properties);
+	defaultKaptcha.setConfig(config);
+	return defaultKaptcha;
+}
+```
+
+三、配置一个controller
+```
+@Controller
+public class KaptchaController {
+	
+	@Autowired
+	Producer producer;
+
+	@RequestMapping("/kaptcha")
+	public void kaptcha(HttpServletRequest request,HttpServletResponse response) throws IOException {
+		HttpSession session = request.getSession();
+		//图片
+		response.setContentType("image/jpeg");
+		//过期时间
+		response.setDateHeader("Expires", 0);
+		//设置没有缓存
+		response.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
+		response.addHeader("Cache-Control", "post-check=0, pre-check=0");
+		response.setHeader("Pragma", "no-cache");
+		
+		String text = producer.createText();
+		session.setAttribute(Constants.KAPTCHA_SESSION_KEY, text);
+		
+		BufferedImage bi = producer.createImage(text);
+		
+		ServletOutputStream out = response.getOutputStream();
+		ImageIO.write(bi, "jpg", out);
+		try {  
+            out.flush();  
+        } finally {  
+            out.close();  
+        }  
+	}
+}
+```
+
+四、登录页面的样式（省略）
+
+五、代码见文件夹2018-03-31\验证码\imgr（注：关于静态资源的获取见下一个内容）
+
+## 静态资源
+
+spring-boot的静态资源通常默认为/resources/static/目录下的内容，所以如果没有另外设置姿态资源路径，可以通过static下的路径获取。例如，/resources/static/layui/layui.css的资源是通过路径/layui/layui.css获取的。
+如果需要另外设置姿态资源的路径。可以通过`spring.mvc.static-path-pattern=`来设置。
+
