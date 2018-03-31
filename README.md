@@ -187,3 +187,26 @@ public class HelloController {
 	}
 }
 ```
+
+## 模板
+
+springboot支持了多钟模板，其中官方推荐使用thymeleaf模板。其实使用是一个很简单的过程的，但是在尝试引入thymeleaf模板的时候却总是遇到问题，本地仓库各种包没有，各种包冲突，导致重复尝试了好几遍都没有成功。
+
+一、导入thymeleaf的spring-boot启动包
+```
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+```
+
+二、使用springboot默认的thymeleaf配置或者配置内容
+```
+spring.thymeleaf.cache=false
+```
+
+三、在resource/templates目录下添加html文件
+
+四、编写controller
+
+五、代码见文件夹2018-03-24\模板\thymeleaf\imgr
