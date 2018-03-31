@@ -1,0 +1,812 @@
+2018-03-24 12:00:53.772  INFO 1956 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1956 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-24 12:00:53.772  INFO 1956 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-24 12:00:53.804  INFO 1956 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6019bef6: startup date [Sat Mar 24 12:00:53 CST 2018]; root of context hierarchy
+2018-03-24 12:00:54.951  INFO 1956 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-24 12:00:54.967  INFO 1956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-24 12:00:54.967  INFO 1956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-24 12:00:55.046  INFO 1956 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-24 12:00:55.046  INFO 1956 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1242 ms
+2018-03-24 12:00:55.244  INFO 1956 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-24 12:00:55.259  INFO 1956 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-24 12:00:55.259  INFO 1956 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-24 12:00:55.259  INFO 1956 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-24 12:00:55.259  INFO 1956 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-24 12:00:55.556  INFO 1956 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6019bef6: startup date [Sat Mar 24 12:00:53 CST 2018]; root of context hierarchy
+2018-03-24 12:00:55.602  INFO 1956 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-24 12:00:55.602  INFO 1956 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-24 12:00:55.602  INFO 1956 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-24 12:00:55.634  INFO 1956 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 12:00:55.634  INFO 1956 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 12:00:55.665  INFO 1956 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 12:00:55.759  INFO 1956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-24 12:00:55.806  INFO 1956 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 12:00:55.869  INFO 1956 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-24 12:00:55.869  INFO 1956 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.395 seconds (JVM running for 3.107)
+2018-03-24 12:01:02.175  INFO 1956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-24 12:01:02.175  INFO 1956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-24 12:01:02.196  INFO 1956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-03-24 12:01:02.211  INFO 1956 --- [http-nio-8080-exec-1] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 12:29:42.681  INFO 1956 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-24 12:29:42.681  INFO 1956 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6019bef6: startup date [Sat Mar 24 12:00:53 CST 2018]; root of context hierarchy
+2018-03-24 12:29:42.681  INFO 1956 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-24 13:03:40.152  INFO 5192 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 5192 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-24 13:03:40.152  INFO 5192 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-24 13:03:40.417  INFO 5192 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 24 13:03:40 CST 2018]; root of context hierarchy
+2018-03-24 13:03:41.727  INFO 5192 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-24 13:03:41.743  INFO 5192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-24 13:03:41.743  INFO 5192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-24 13:03:41.806  INFO 5192 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-24 13:03:41.806  INFO 5192 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1389 ms
+2018-03-24 13:03:42.025  INFO 5192 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-24 13:03:42.025  INFO 5192 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-24 13:03:42.025  INFO 5192 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-24 13:03:42.025  INFO 5192 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-24 13:03:42.025  INFO 5192 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-24 13:03:42.352  INFO 5192 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 24 13:03:40 CST 2018]; root of context hierarchy
+2018-03-24 13:03:42.399  INFO 5192 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-24 13:03:42.399  INFO 5192 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-24 13:03:42.399  INFO 5192 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-24 13:03:42.446  INFO 5192 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:03:42.446  INFO 5192 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:03:42.477  INFO 5192 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:03:42.602  INFO 5192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-24 13:03:42.649  INFO 5192 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 13:03:42.711  INFO 5192 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-24 13:03:42.727  INFO 5192 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.764 seconds (JVM running for 3.839)
+2018-03-24 13:03:53.463  INFO 5192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-24 13:03:53.464  INFO 5192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-24 13:03:53.513  INFO 5192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 49 ms
+2018-03-24 13:03:53.540  INFO 5192 --- [http-nio-8080-exec-1] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:04:01.438  INFO 5192 --- [http-nio-8080-exec-2] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:04:22.208  INFO 5192 --- [http-nio-8080-exec-4] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:04:22.876  INFO 5192 --- [http-nio-8080-exec-6] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:04:23.061  INFO 5192 --- [http-nio-8080-exec-8] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:04:23.201  INFO 5192 --- [http-nio-8080-exec-10] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:04:23.571  INFO 5192 --- [http-nio-8080-exec-2] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:04:23.741  INFO 5192 --- [http-nio-8080-exec-4] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:04:23.890  INFO 5192 --- [http-nio-8080-exec-6] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:05:46.196  INFO 5192 --- [http-nio-8080-exec-10] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:05:47.032  INFO 5192 --- [http-nio-8080-exec-2] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:05:47.209  INFO 5192 --- [http-nio-8080-exec-4] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:05:47.360  INFO 5192 --- [http-nio-8080-exec-6] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:05:53.960  INFO 5192 --- [http-nio-8080-exec-8] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 13:06:16.546  INFO 4012 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 4012 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-24 13:06:16.546  INFO 4012 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-24 13:06:16.609  INFO 4012 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72e184e7: startup date [Sat Mar 24 13:06:16 CST 2018]; root of context hierarchy
+2018-03-24 13:06:17.780  INFO 4012 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-24 13:06:17.795  INFO 4012 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-24 13:06:17.795  INFO 4012 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-24 13:06:17.859  INFO 4012 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-24 13:06:17.859  INFO 4012 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1250 ms
+2018-03-24 13:06:18.030  INFO 4012 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-24 13:06:18.030  INFO 4012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-24 13:06:18.046  INFO 4012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-24 13:06:18.046  INFO 4012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-24 13:06:18.046  INFO 4012 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-24 13:06:18.342  INFO 4012 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72e184e7: startup date [Sat Mar 24 13:06:16 CST 2018]; root of context hierarchy
+2018-03-24 13:06:18.373  INFO 4012 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-24 13:06:18.389  INFO 4012 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-24 13:06:18.389  INFO 4012 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-24 13:06:18.420  INFO 4012 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:06:18.420  INFO 4012 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:06:18.467  INFO 4012 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:06:18.576  INFO 4012 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-24 13:06:18.623  INFO 4012 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 13:06:18.685  INFO 4012 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-24 13:06:18.701  INFO 4012 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.342 seconds (JVM running for 3.114)
+2018-03-24 13:06:23.141  INFO 4012 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-24 13:06:23.141  INFO 4012 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-24 13:06:23.165  INFO 4012 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-03-24 13:07:33.538  INFO 5344 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 5344 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-24 13:07:33.553  INFO 5344 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-24 13:07:33.601  INFO 5344 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 24 13:07:33 CST 2018]; root of context hierarchy
+2018-03-24 13:07:34.724  INFO 5344 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-24 13:07:34.740  INFO 5344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-24 13:07:34.740  INFO 5344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-24 13:07:34.803  INFO 5344 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-24 13:07:34.803  INFO 5344 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1202 ms
+2018-03-24 13:07:34.975  INFO 5344 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-24 13:07:34.975  INFO 5344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-24 13:07:34.975  INFO 5344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-24 13:07:34.975  INFO 5344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-24 13:07:34.975  INFO 5344 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-24 13:07:35.287  INFO 5344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 24 13:07:33 CST 2018]; root of context hierarchy
+2018-03-24 13:07:35.318  INFO 5344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-24 13:07:35.334  INFO 5344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-24 13:07:35.334  INFO 5344 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-24 13:07:35.365  INFO 5344 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:07:35.365  INFO 5344 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:07:35.412  INFO 5344 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:07:35.521  INFO 5344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-24 13:07:35.568  INFO 5344 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 13:07:35.630  INFO 5344 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-24 13:07:35.630  INFO 5344 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.264 seconds (JVM running for 3.109)
+2018-03-24 13:07:39.668  INFO 5344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-24 13:07:39.668  INFO 5344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-24 13:07:39.692  INFO 5344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-03-24 13:08:14.029  INFO 1148 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1148 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-24 13:08:14.029  INFO 1148 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-24 13:08:14.077  INFO 1148 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5af620d9: startup date [Sat Mar 24 13:08:14 CST 2018]; root of context hierarchy
+2018-03-24 13:08:15.310  INFO 1148 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-24 13:08:15.310  INFO 1148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-24 13:08:15.310  INFO 1148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-24 13:08:15.389  INFO 1148 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-24 13:08:15.389  INFO 1148 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1312 ms
+2018-03-24 13:08:15.545  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-24 13:08:15.545  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-24 13:08:15.545  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-24 13:08:15.545  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-24 13:08:15.545  INFO 1148 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-24 13:08:15.841  INFO 1148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5af620d9: startup date [Sat Mar 24 13:08:14 CST 2018]; root of context hierarchy
+2018-03-24 13:08:15.872  INFO 1148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-24 13:08:15.888  INFO 1148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-24 13:08:15.888  INFO 1148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-24 13:08:15.919  INFO 1148 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:08:15.919  INFO 1148 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:08:15.950  INFO 1148 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 13:08:16.075  INFO 1148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-24 13:08:16.122  INFO 1148 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 13:08:16.184  INFO 1148 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-24 13:08:16.184  INFO 1148 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.342 seconds (JVM running for 3.163)
+2018-03-24 13:08:19.813  INFO 1148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-24 13:08:19.813  INFO 1148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-24 13:08:19.838  INFO 1148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-03-24 13:08:19.868  INFO 1148 --- [http-nio-8080-exec-1] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 13:09:29.956  INFO 1148 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-24 13:09:29.956  INFO 1148 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5af620d9: startup date [Sat Mar 24 13:08:14 CST 2018]; root of context hierarchy
+2018-03-24 13:09:29.956  INFO 1148 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-24 21:39:43.242  INFO 1204 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1204 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-24 21:39:43.274  INFO 1204 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-24 21:39:43.476  INFO 1204 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72e184e7: startup date [Sat Mar 24 21:39:43 CST 2018]; root of context hierarchy
+2018-03-24 21:39:45.972  INFO 1204 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-24 21:39:46.005  INFO 1204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-24 21:39:46.005  INFO 1204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-24 21:39:46.207  INFO 1204 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-24 21:39:46.207  INFO 1204 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2746 ms
+2018-03-24 21:39:46.473  INFO 1204 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-24 21:39:46.473  INFO 1204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-24 21:39:46.473  INFO 1204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-24 21:39:46.473  INFO 1204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-24 21:39:46.473  INFO 1204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-24 21:39:47.065  INFO 1204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72e184e7: startup date [Sat Mar 24 21:39:43 CST 2018]; root of context hierarchy
+2018-03-24 21:39:47.191  INFO 1204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-24 21:39:47.191  INFO 1204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-24 21:39:47.191  INFO 1204 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-24 21:39:47.222  INFO 1204 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 21:39:47.222  INFO 1204 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 21:39:47.316  INFO 1204 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 21:39:47.472  INFO 1204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-24 21:39:47.550  INFO 1204 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 21:39:47.737  INFO 1204 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-24 21:39:47.737  INFO 1204 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 5.634 seconds (JVM running for 6.929)
+2018-03-24 21:39:52.565  INFO 1204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-24 21:39:52.565  INFO 1204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-24 21:39:52.598  INFO 1204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-03-24 21:39:52.709  INFO 1204 --- [http-nio-8080-exec-1] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 21:39:56.123  INFO 1204 --- [http-nio-8080-exec-2] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 21:40:51.398  INFO 1204 --- [http-nio-8080-exec-4] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 21:40:51.583  INFO 1204 --- [http-nio-8080-exec-9] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 21:40:51.800  INFO 1204 --- [http-nio-8080-exec-7] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 21:41:17.281  INFO 1204 --- [http-nio-8080-exec-10] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 21:41:35.833  INFO 1568 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1568 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-24 21:41:35.833  INFO 1568 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-24 21:41:35.881  INFO 1568 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 24 21:41:35 CST 2018]; root of context hierarchy
+2018-03-24 21:41:37.098  INFO 1568 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-03-24 21:41:37.098  INFO 1568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-24 21:41:37.098  INFO 1568 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-24 21:41:37.161  INFO 1568 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-24 21:41:37.161  INFO 1568 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1280 ms
+2018-03-24 21:41:37.333  INFO 1568 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-24 21:41:37.349  INFO 1568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-24 21:41:37.349  INFO 1568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-24 21:41:37.349  INFO 1568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-24 21:41:37.349  INFO 1568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-24 21:41:37.676  INFO 1568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 24 21:41:35 CST 2018]; root of context hierarchy
+2018-03-24 21:41:37.723  INFO 1568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-24 21:41:37.723  INFO 1568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-24 21:41:37.723  INFO 1568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-24 21:41:37.754  INFO 1568 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 21:41:37.754  INFO 1568 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 21:41:37.801  INFO 1568 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-24 21:41:37.910  INFO 1568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-24 21:41:37.957  INFO 1568 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-24 21:41:38.019  INFO 1568 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-03-24 21:41:38.019  INFO 1568 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.373 seconds (JVM running for 3.223)
+2018-03-24 21:41:42.287  INFO 1568 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-24 21:41:42.287  INFO 1568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-24 21:41:42.311  INFO 1568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-03-24 21:41:42.410  INFO 1568 --- [http-nio-8080-exec-1] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 21:41:42.418  INFO 1568 --- [http-nio-8080-exec-1] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 22:12:16.595  INFO 1568 --- [http-nio-8080-exec-5] c.shotq.imgr.controller.HelloController  : HelloController.hello
+2018-03-24 22:12:16.596  INFO 1568 --- [http-nio-8080-exec-5] com.shotq.imgr.aop.TestAop               : 执行方法：hello
+2018-03-24 22:30:39.749  INFO 1568 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-24 22:30:39.750  INFO 1568 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 24 21:41:35 CST 2018]; root of context hierarchy
+2018-03-24 22:30:39.752  INFO 1568 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-28 13:13:58.906  INFO 6928 --- [main] com.shotq.imgr.ImgrApplicationTests      : Starting ImgrApplicationTests on SC-201704051410 with PID 6928 (started by Administrator in D:\springws\imgr)
+2018-03-28 13:13:58.942  INFO 6928 --- [main] com.shotq.imgr.ImgrApplicationTests      : The following profiles are active: dev
+2018-03-28 13:13:59.425  INFO 6928 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@242b836: startup date [Wed Mar 28 13:13:59 CST 2018]; root of context hierarchy
+2018-03-28 13:14:01.903  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@242b836: startup date [Wed Mar 28 13:13:59 CST 2018]; root of context hierarchy
+2018-03-28 13:14:01.998  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-28 13:14:02.000  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-28 13:14:02.006  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-28 13:14:02.007  INFO 6928 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-28 13:14:02.066  INFO 6928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-28 13:14:02.067  INFO 6928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-28 13:14:02.131  INFO 6928 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-28 13:14:02.878  INFO 6928 --- [main] com.shotq.imgr.ImgrApplicationTests      : Started ImgrApplicationTests in 4.46 seconds (JVM running for 5.635)
+2018-03-28 13:14:03.023  INFO 6928 --- [Thread-3] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@242b836: startup date [Wed Mar 28 13:13:59 CST 2018]; root of context hierarchy
+2018-03-31 11:44:09.255  INFO 3704 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 3704 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 11:44:09.271  INFO 3704 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 11:44:09.333  INFO 3704 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 31 11:44:09 CST 2018]; root of context hierarchy
+2018-03-31 11:44:11.021  INFO 3704 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 11:44:11.036  INFO 3704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 11:44:11.036  INFO 3704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 11:44:11.131  INFO 3704 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 11:44:11.131  INFO 3704 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1798 ms
+2018-03-31 11:44:11.303  INFO 3704 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 11:44:11.318  INFO 3704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 11:44:11.318  INFO 3704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 11:44:11.318  INFO 3704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 11:44:11.318  INFO 3704 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 11:44:11.614  INFO 3704 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 31 11:44:09 CST 2018]; root of context hierarchy
+2018-03-31 11:44:11.739  INFO 3704 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 11:44:11.739  INFO 3704 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 11:44:11.739  INFO 3704 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 11:44:11.739  INFO 3704 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 11:44:11.786  INFO 3704 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 11:44:11.786  INFO 3704 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 11:44:11.832  INFO 3704 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 11:44:12.004  INFO 3704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 11:44:12.051  INFO 3704 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 11:44:12.284  INFO 3704 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 11:44:12.284  INFO 3704 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 3.326 seconds (JVM running for 4.254)
+2018-03-31 12:23:09.839  INFO 3572 --- [main] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 3572 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 12:23:09.839  INFO 3572 --- [main] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 12:23:10.041  INFO 3572 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:23:10 CST 2018]; root of context hierarchy
+2018-03-31 12:23:11.053  INFO 3572 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 12:23:11.053  INFO 3572 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 12:23:11.053  INFO 3572 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 12:23:11.132  INFO 3572 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 12:23:11.132  INFO 3572 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1091 ms
+2018-03-31 12:23:11.288  INFO 3572 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 12:23:11.288  INFO 3572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 12:23:11.288  INFO 3572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 12:23:11.288  INFO 3572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 12:23:11.288  INFO 3572 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 12:23:11.595  INFO 3572 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:23:10 CST 2018]; root of context hierarchy
+2018-03-31 12:23:11.632  INFO 3572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 12:23:11.632  INFO 3572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 12:23:11.632  INFO 3572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 12:23:11.632  INFO 3572 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 12:23:11.663  INFO 3572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:23:11.663  INFO 3572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:23:11.710  INFO 3572 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:23:12.022  INFO 3572 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 12:23:12.069  INFO 3572 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 12:23:12.069  INFO 3572 --- [main] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.419 seconds (JVM running for 3.17)
+2018-03-31 12:24:13.579  INFO 3572 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 12:24:13.580  INFO 3572 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 12:24:13.601  INFO 3572 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-03-31 12:24:13.779 ERROR 3572 --- [http-nio-8180-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler processing failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+
+java.lang.ClassNotFoundException: javassist.ClassPool
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at ognl.OgnlRuntime.<clinit>(OgnlRuntime.java:165)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.thymeleaf.context.VariablesMap.<clinit>(VariablesMap.java:57)
+	at org.thymeleaf.context.WebContext.<init>(WebContext.java:111)
+	at org.thymeleaf.spring4.context.SpringWebContext.<init>(SpringWebContext.java:83)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:253)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-03-31 12:35:32.669  INFO 3572 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-31 12:35:32.669  INFO 3572 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:23:10 CST 2018]; root of context hierarchy
+2018-03-31 12:35:32.669  INFO 3572 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 12:35:41.791  INFO 4368 --- [main] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 4368 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 12:35:41.791  INFO 4368 --- [main] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 12:35:41.979  INFO 4368 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:35:41 CST 2018]; root of context hierarchy
+2018-03-31 12:35:43.058  INFO 4368 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 12:35:43.058  INFO 4368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 12:35:43.073  INFO 4368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 12:35:43.152  INFO 4368 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 12:35:43.152  INFO 4368 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1173 ms
+2018-03-31 12:35:43.309  INFO 4368 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 12:35:43.309  INFO 4368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 12:35:43.309  INFO 4368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 12:35:43.309  INFO 4368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 12:35:43.309  INFO 4368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 12:35:43.604  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:35:41 CST 2018]; root of context hierarchy
+2018-03-31 12:35:43.651  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 12:35:43.651  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 12:35:43.651  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 12:35:43.651  INFO 4368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 12:35:43.698  INFO 4368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:35:43.698  INFO 4368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:35:43.729  INFO 4368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:35:44.067  INFO 4368 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 12:35:44.108  INFO 4368 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 12:35:44.124  INFO 4368 --- [main] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.52 seconds (JVM running for 3.268)
+2018-03-31 12:37:05.722  INFO 4368 --- [http-nio-8180-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 12:37:05.722  INFO 4368 --- [http-nio-8180-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 12:37:05.745  INFO 4368 --- [http-nio-8180-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-03-31 12:37:05.815 ERROR 4368 --- [http-nio-8180-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler processing failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+
+java.lang.ClassNotFoundException: javassist.ClassPool
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at ognl.OgnlRuntime.<clinit>(OgnlRuntime.java:165)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.thymeleaf.context.VariablesMap.<clinit>(VariablesMap.java:57)
+	at org.thymeleaf.context.WebContext.<init>(WebContext.java:111)
+	at org.thymeleaf.spring4.context.SpringWebContext.<init>(SpringWebContext.java:83)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:253)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-03-31 12:46:56.468  INFO 4368 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-31 12:46:56.468  INFO 4368 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:35:41 CST 2018]; root of context hierarchy
+2018-03-31 12:46:56.468  INFO 4368 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 12:47:01.809  INFO 4732 --- [main] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 4732 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 12:47:01.809  INFO 4732 --- [main] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 12:47:02.012  INFO 4732 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:47:02 CST 2018]; root of context hierarchy
+2018-03-31 12:47:03.067  INFO 4732 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 12:47:03.067  INFO 4732 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 12:47:03.067  INFO 4732 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 12:47:03.161  INFO 4732 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 12:47:03.161  INFO 4732 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1149 ms
+2018-03-31 12:47:03.306  INFO 4732 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 12:47:03.310  INFO 4732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 12:47:03.310  INFO 4732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 12:47:03.310  INFO 4732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 12:47:03.310  INFO 4732 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 12:47:03.607  INFO 4732 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:47:02 CST 2018]; root of context hierarchy
+2018-03-31 12:47:03.653  INFO 4732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 12:47:03.653  INFO 4732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 12:47:03.653  INFO 4732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 12:47:03.653  INFO 4732 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 12:47:03.694  INFO 4732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:47:03.694  INFO 4732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:47:03.725  INFO 4732 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 12:47:04.037  INFO 4732 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 12:47:04.083  INFO 4732 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 12:47:04.083  INFO 4732 --- [main] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.445 seconds (JVM running for 3.249)
+2018-03-31 12:47:11.398  INFO 4732 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 12:47:11.398  INFO 4732 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 12:47:11.419  INFO 4732 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-03-31 12:47:11.486 ERROR 4732 --- [http-nio-8180-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler processing failed; nested exception is java.lang.ExceptionInInitializerError] with root cause
+
+java.lang.ClassNotFoundException: javassist.ClassPool
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at ognl.OgnlRuntime.<clinit>(OgnlRuntime.java:165)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.thymeleaf.context.VariablesMap.<clinit>(VariablesMap.java:57)
+	at org.thymeleaf.context.WebContext.<init>(WebContext.java:111)
+	at org.thymeleaf.spring4.context.SpringWebContext.<init>(SpringWebContext.java:83)
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:253)
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2018-03-31 12:53:16.998  INFO 4732 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-31 12:53:16.998  INFO 4732 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54c562f7: startup date [Sat Mar 31 12:47:02 CST 2018]; root of context hierarchy
+2018-03-31 12:53:16.998  INFO 4732 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 13:04:12.496  INFO 3096 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 3096 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 13:04:12.496  INFO 3096 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 13:04:12.689  INFO 3096 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d311a2d: startup date [Sat Mar 31 13:04:12 CST 2018]; root of context hierarchy
+2018-03-31 13:04:13.956  INFO 3096 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 13:04:13.956  INFO 3096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 13:04:13.956  INFO 3096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 13:04:14.036  INFO 3096 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 13:04:14.036  INFO 3096 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1347 ms
+2018-03-31 13:04:14.181  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 13:04:14.181  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 13:04:14.181  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 13:04:14.181  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 13:04:14.181  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 13:04:14.497  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d311a2d: startup date [Sat Mar 31 13:04:12 CST 2018]; root of context hierarchy
+2018-03-31 13:04:14.535  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 13:04:14.535  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 13:04:14.535  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 13:04:14.535  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 13:04:14.581  INFO 3096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 13:04:14.581  INFO 3096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 13:04:14.628  INFO 3096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 13:04:14.991  INFO 3096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 13:04:15.042  INFO 3096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 13:04:15.089  INFO 3096 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 13:04:15.089  INFO 3096 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.783 seconds (JVM running for 3.533)
+2018-03-31 13:04:19.795  INFO 3096 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 13:04:19.795  INFO 3096 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 13:04:19.819  INFO 3096 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-03-31 13:05:44.646  INFO 3096 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d311a2d: startup date [Sat Mar 31 13:04:12 CST 2018]; root of context hierarchy
+2018-03-31 13:05:44.662  INFO 3096 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 13:05:44.990  INFO 3096 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 3096 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 13:05:44.990  INFO 3096 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 13:05:45.006  INFO 3096 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@465acaf9: startup date [Sat Mar 31 13:05:45 CST 2018]; root of context hierarchy
+2018-03-31 13:05:45.370  INFO 3096 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 13:05:45.370  INFO 3096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 13:05:45.370  INFO 3096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 13:05:45.401  INFO 3096 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 13:05:45.401  INFO 3096 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 395 ms
+2018-03-31 13:05:45.448  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 13:05:45.448  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 13:05:45.448  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 13:05:45.448  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 13:05:45.448  INFO 3096 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 13:05:45.566  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@465acaf9: startup date [Sat Mar 31 13:05:45 CST 2018]; root of context hierarchy
+2018-03-31 13:05:45.568  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 13:05:45.568  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 13:05:45.568  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 13:05:45.568  INFO 3096 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 13:05:45.583  INFO 3096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 13:05:45.583  INFO 3096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 13:05:45.615  INFO 3096 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 13:05:45.677  INFO 3096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 13:05:45.725  INFO 3096 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 13:05:45.740  INFO 3096 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 13:05:45.756  INFO 3096 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 0.781 seconds (JVM running for 94.186)
+2018-03-31 13:05:49.028  INFO 3096 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 13:05:49.029  INFO 3096 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 13:05:49.039  INFO 3096 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2018-03-31 13:19:47.682  INFO 3096 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-31 13:19:47.682  INFO 3096 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@465acaf9: startup date [Sat Mar 31 13:05:45 CST 2018]; root of context hierarchy
+2018-03-31 13:19:47.682  INFO 3096 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 17:53:40.077  INFO 4832 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 4832 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 17:53:40.108  INFO 4832 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 17:53:40.254  INFO 4832 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 31 17:53:40 CST 2018]; root of context hierarchy
+2018-03-31 17:53:42.755  INFO 4832 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 17:53:42.803  INFO 4832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 17:53:42.803  INFO 4832 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 17:53:43.021  INFO 4832 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 17:53:43.021  INFO 4832 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2767 ms
+2018-03-31 17:53:43.210  INFO 4832 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 17:53:43.213  INFO 4832 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 17:53:43.214  INFO 4832 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 17:53:43.214  INFO 4832 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 17:53:43.214  INFO 4832 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 17:53:43.824  INFO 4832 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 31 17:53:40 CST 2018]; root of context hierarchy
+2018-03-31 17:53:43.919  INFO 4832 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 17:53:43.919  INFO 4832 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 17:53:43.919  INFO 4832 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 17:53:43.919  INFO 4832 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 17:53:43.966  INFO 4832 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:53:43.966  INFO 4832 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:53:43.997  INFO 4832 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:53:44.177  INFO 4832 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 17:53:44.224  INFO 4832 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 17:53:44.489  INFO 4832 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 17:53:44.489  INFO 4832 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 5.106 seconds (JVM running for 6.657)
+2018-03-31 17:53:55.334  INFO 4832 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 17:53:55.334  INFO 4832 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 17:53:55.374  INFO 4832 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2018-03-31 17:55:01.334  INFO 4832 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-31 17:55:01.334  INFO 4832 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 31 17:53:40 CST 2018]; root of context hierarchy
+2018-03-31 17:55:01.349  INFO 4832 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 17:55:26.756  INFO 4588 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 4588 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 17:55:26.756  INFO 4588 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 17:55:26.802  INFO 4588 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b749882: startup date [Sat Mar 31 17:55:26 CST 2018]; root of context hierarchy
+2018-03-31 17:55:28.029  INFO 4588 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 17:55:28.029  INFO 4588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 17:55:28.029  INFO 4588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 17:55:28.097  INFO 4588 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 17:55:28.097  INFO 4588 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1295 ms
+2018-03-31 17:55:28.263  INFO 4588 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 17:55:28.263  INFO 4588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 17:55:28.263  INFO 4588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 17:55:28.263  INFO 4588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 17:55:28.263  INFO 4588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 17:55:28.606  INFO 4588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b749882: startup date [Sat Mar 31 17:55:26 CST 2018]; root of context hierarchy
+2018-03-31 17:55:28.653  INFO 4588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 17:55:28.653  INFO 4588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 17:55:28.653  INFO 4588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 17:55:28.653  INFO 4588 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 17:55:28.684  INFO 4588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:55:28.684  INFO 4588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:55:28.716  INFO 4588 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:55:28.840  INFO 4588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 17:55:28.918  INFO 4588 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 17:55:28.965  INFO 4588 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 17:55:28.981  INFO 4588 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.413 seconds (JVM running for 3.185)
+2018-03-31 17:55:50.561  INFO 4588 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 17:55:50.562  INFO 4588 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 17:55:50.584  INFO 4588 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-03-31 17:59:15.062  INFO 4588 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-31 17:59:15.062  INFO 4588 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b749882: startup date [Sat Mar 31 17:55:26 CST 2018]; root of context hierarchy
+2018-03-31 17:59:15.062  INFO 4588 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 17:59:33.424  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1528 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 17:59:33.424  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 17:59:33.486  INFO 1528 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4509f98: startup date [Sat Mar 31 17:59:33 CST 2018]; root of context hierarchy
+2018-03-31 17:59:35.271  INFO 1528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 17:59:35.271  INFO 1528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 17:59:35.271  INFO 1528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 17:59:35.366  INFO 1528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 17:59:35.366  INFO 1528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1895 ms
+2018-03-31 17:59:35.584  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 17:59:35.584  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 17:59:35.584  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 17:59:35.584  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 17:59:35.584  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 17:59:57.084  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4509f98: startup date [Sat Mar 31 17:59:33 CST 2018]; root of context hierarchy
+2018-03-31 17:59:57.162  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 17:59:57.162  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 17:59:57.177  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 17:59:57.177  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 17:59:57.228  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:59:57.228  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:59:57.276  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 17:59:57.478  INFO 1528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 17:59:57.666  INFO 1528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 17:59:57.778  INFO 1528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 17:59:57.793  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 24.605 seconds (JVM running for 26.84)
+2018-03-31 18:00:07.072  INFO 1528 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 18:00:07.072  INFO 1528 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 18:00:07.105  INFO 1528 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-03-31 18:01:33.247  INFO 1528 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4509f98: startup date [Sat Mar 31 17:59:33 CST 2018]; root of context hierarchy
+2018-03-31 18:01:33.263  INFO 1528 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 18:01:33.655  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1528 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 18:01:33.655  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 18:01:33.655  INFO 1528 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c6d3753: startup date [Sat Mar 31 18:01:33 CST 2018]; root of context hierarchy
+2018-03-31 18:01:34.116  INFO 1528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 18:01:34.116  INFO 1528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 18:01:34.116  INFO 1528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 18:01:34.148  INFO 1528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 18:01:34.148  INFO 1528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 493 ms
+2018-03-31 18:01:34.201  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 18:01:34.201  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 18:01:34.201  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 18:01:34.201  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 18:01:34.201  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 18:01:47.144  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c6d3753: startup date [Sat Mar 31 18:01:33 CST 2018]; root of context hierarchy
+2018-03-31 18:01:47.160  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 18:01:47.160  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 18:01:47.160  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 18:01:47.160  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 18:01:47.176  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:01:47.176  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:01:47.192  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:01:47.262  INFO 1528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 18:01:47.449  INFO 1528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 18:01:47.496  INFO 1528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 18:01:47.496  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 13.888 seconds (JVM running for 136.542)
+2018-03-31 18:01:54.349  INFO 1528 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 18:01:54.351  INFO 1528 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 18:01:54.362  INFO 1528 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-03-31 18:03:16.934  INFO 1528 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c6d3753: startup date [Sat Mar 31 18:01:33 CST 2018]; root of context hierarchy
+2018-03-31 18:03:16.934  INFO 1528 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 18:03:17.357  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1528 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 18:03:17.357  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 18:03:17.357  INFO 1528 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5db1580b: startup date [Sat Mar 31 18:03:17 CST 2018]; root of context hierarchy
+2018-03-31 18:03:17.856  INFO 1528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 18:03:17.856  INFO 1528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 18:03:17.856  INFO 1528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 18:03:17.887  INFO 1528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 18:03:17.887  INFO 1528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 530 ms
+2018-03-31 18:03:17.934  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 18:03:17.934  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 18:03:17.934  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 18:03:17.934  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 18:03:17.934  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 18:03:24.158  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5db1580b: startup date [Sat Mar 31 18:03:17 CST 2018]; root of context hierarchy
+2018-03-31 18:03:24.174  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 18:03:24.174  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 18:03:24.174  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 18:03:24.174  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 18:03:24.191  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:03:24.191  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:03:24.207  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:03:24.269  INFO 1528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 18:03:24.470  INFO 1528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 18:03:24.502  INFO 1528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 18:03:24.502  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 7.192 seconds (JVM running for 233.549)
+2018-03-31 18:03:27.520  INFO 1528 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 18:03:27.521  INFO 1528 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 18:03:27.538  INFO 1528 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-03-31 18:06:57.011  INFO 1528 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5db1580b: startup date [Sat Mar 31 18:03:17 CST 2018]; root of context hierarchy
+2018-03-31 18:06:57.011  INFO 1528 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 18:06:57.489  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1528 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 18:06:57.489  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 18:06:57.489  INFO 1528 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73d20fed: startup date [Sat Mar 31 18:06:57 CST 2018]; root of context hierarchy
+2018-03-31 18:06:58.126  INFO 1528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 18:06:58.126  INFO 1528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 18:06:58.126  INFO 1528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 18:06:58.158  INFO 1528 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 18:06:58.158  INFO 1528 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 669 ms
+2018-03-31 18:06:58.205  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 18:06:58.205  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 18:06:58.205  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 18:06:58.205  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 18:06:58.205  INFO 1528 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 18:07:05.665  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73d20fed: startup date [Sat Mar 31 18:06:57 CST 2018]; root of context hierarchy
+2018-03-31 18:07:05.681  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.shotq.imgr.controller.HelloController.hello()
+2018-03-31 18:07:05.681  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld]}" onto public java.lang.String com.shotq.imgr.controller.HelloWorldController.helloworld()
+2018-03-31 18:07:05.681  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 18:07:05.696  INFO 1528 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 18:07:05.713  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:07:05.713  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:07:05.729  INFO 1528 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:07:05.775  INFO 1528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 18:07:05.978  INFO 1528 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 18:07:06.009  INFO 1528 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 18:07:06.009  INFO 1528 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 8.582 seconds (JVM running for 455.056)
+2018-03-31 18:07:10.286  INFO 1528 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-03-31 18:07:10.286  INFO 1528 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73d20fed: startup date [Sat Mar 31 18:06:57 CST 2018]; root of context hierarchy
+2018-03-31 18:07:10.302  INFO 1528 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-03-31 18:20:49.652  INFO 1324 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Starting ImgrApplication on SC-201704051410 with PID 1324 (D:\springws\imgr\target\classes started by Administrator in D:\springws\imgr)
+2018-03-31 18:20:49.652  INFO 1324 --- [restartedMain] com.shotq.imgr.ImgrApplication           : The following profiles are active: dev
+2018-03-31 18:20:49.714  INFO 1324 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 31 18:20:49 CST 2018]; root of context hierarchy
+2018-03-31 18:20:50.964  INFO 1324 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8180 (http)
+2018-03-31 18:20:50.964  INFO 1324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-31 18:20:50.980  INFO 1324 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2018-03-31 18:20:51.043  INFO 1324 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-31 18:20:51.043  INFO 1324 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1345 ms
+2018-03-31 18:20:51.221  INFO 1324 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-31 18:20:51.221  INFO 1324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-31 18:20:51.221  INFO 1324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-31 18:20:51.221  INFO 1324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-31 18:20:51.221  INFO 1324 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-31 18:20:51.566  INFO 1324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@cce313c: startup date [Sat Mar 31 18:20:49 CST 2018]; root of context hierarchy
+2018-03-31 18:20:51.597  INFO 1324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login]}" onto public java.lang.String com.shotq.imgr.controller.LoginController.login()
+2018-03-31 18:20:51.613  INFO 1324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-31 18:20:51.613  INFO 1324 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-31 18:20:51.644  INFO 1324 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:20:51.644  INFO 1324 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:20:51.691  INFO 1324 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-31 18:20:51.800  INFO 1324 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-03-31 18:20:51.847  INFO 1324 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-31 18:20:51.925  INFO 1324 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8180 (http)
+2018-03-31 18:20:51.925  INFO 1324 --- [restartedMain] com.shotq.imgr.ImgrApplication           : Started ImgrApplication in 2.461 seconds (JVM running for 3.255)
+2018-03-31 18:21:07.062  INFO 1324 --- [http-nio-8180-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-31 18:21:07.062  INFO 1324 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-31 18:21:07.085  INFO 1324 --- [http-nio-8180-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms

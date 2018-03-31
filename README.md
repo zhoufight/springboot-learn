@@ -209,4 +209,56 @@ spring.thymeleaf.cache=false
 
 四、编写controller
 
-五、代码见文件夹2018-03-24\模板\thymeleaf\imgr
+五、代码见文件夹2018-03-31\模板\thymeleaf\imgr
+
+## 模板--beetl
+
+java的模板引擎有好多，例如freemarker、thymeleaf，但是在性能上他们都没有很好的性能，所以选择了性能更好的beetl，虽然在语法上，个人觉得beetl的确不够雅观。
+
+一、导入beetl包
+```
+<dependency>
+	<groupId>com.ibeetl</groupId>
+	<artifactId>beetl</artifactId>
+	<version>2.7.15</version>
+</dependency>
+```
+
+二、配置beetl
+通过java来配置beetl
+```
+@Configuration
+public class BeetlConfig {
+	
+	@Value("${spring.beetl.prefix}") String templatePath;
+	
+	@Bean(initMethod = "init")
+	public BeetlGroupUtilConfiguration beetlGroupUtilConfiguration() {
+		BeetlGroupUtilConfiguration beetlConfiguration = new BeetlGroupUtilConfiguration();
+		//beetl中可以自定义一些方法
+		//GroupTemplate groupTemplate = beetlConfiguration.getGroupTemplate();
+		//groupTemplate.registerFunction("", new Function());
+		//前缀
+		ClasspathResourceLoader resourceLoader = new ClasspathResourceLoader(BeetlConfig.class.getClassLoader(),templatePath);
+		beetlConfiguration.setResourceLoader(resourceLoader);
+		//设置配置
+		//beetlConfiguration.setConfigProperties(configProperties);
+		return beetlConfiguration;
+	}
+	
+	@Bean
+	public BeetlSpringViewResolver beetlSpringViewResolver() {
+		BeetlSpringViewResolver beetlSpringViewResolver = new BeetlSpringViewResolver();
+		beetlSpringViewResolver.setConfig(beetlGroupUtilConfiguration());
+		//后缀
+		beetlSpringViewResolver.setSuffix(".html");
+        beetlSpringViewResolver.setContentType("text/html;charset=UTF-8");
+        beetlSpringViewResolver.setOrder(0);
+        return beetlSpringViewResolver;
+	}
+
+}
+```
+其中，可以通过配置GroupTemplate来获得一些自定义的东西，例如方法等，在权限管理或者一些特定的方法上可以使用这个注册方法，使得该方法可以在前端页面使用。
+
+三、详细代码见文件夹2018-03-31\模板\beetl\imgr
