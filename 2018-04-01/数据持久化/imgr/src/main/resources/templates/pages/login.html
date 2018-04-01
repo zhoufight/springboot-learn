@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%
+			include("../common/header.html"){}
+		%>
+		<style>
+			.layui-layout-admin .layui-body{top:0px;bottom:0px;left:0px;background: #6495ED;}
+			.flex-center{height:100%;display:flex;align-items:center;justify-content: center;}
+			.login-panel{width:400px;height:280px;background: #fff;}
+			.mg10{margin:10px;}
+			.layui-form-item .inline-left{width:260px;}
+			.layui-form-item .inline-right{margin-right:0px;}
+			.verifycode-img{display: inline}
+		</style>
+	</head>
+	<body class="layui-layout-body">
+		<div class="layui-layout layui-layout-admin">
+			<div class="layui-body">
+				<div class="flex-center">
+					<div class="login-panel">
+						<form action="/validate" id="dataForm" class="layui-form mg10">
+							<div class="layui-form-item">
+								<input class="layui-input">
+							</div>
+							<div class="layui-form-item">
+								<input class="layui-input">
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-inline inline-left">
+									<input class="layui-input" name="verifyCode" id="verifyCode">
+								</div>
+								<div class="layui-inline inline-right">
+									<img src="/kaptcha" class="verifycode-img" >
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<button class="layui-btn layui-btn-fluid">登录</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/layui/layui.js"></script>
+		<script type="text/javascript" src="/pages/login.js"></script>
+	</body>
+</html>

@@ -342,3 +342,106 @@ public class KaptchaController {
 spring-boot的静态资源通常默认为/resources/static/目录下的内容，所以如果没有另外设置姿态资源路径，可以通过static下的路径获取。例如，/resources/static/layui/layui.css的资源是通过路径/layui/layui.css获取的。
 如果需要另外设置姿态资源的路径。可以通过`spring.mvc.static-path-pattern=`来设置。
 
+
+## 数据持久化
+
+一、导入相关的包（这里使用了阿里的druid数据库连接池）
+```
+<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+</dependency>
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>druid</artifactId>
+    <version>1.1.4</version>
+</dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-jdbc</artifactId>
+</dependency>
+```
+
+二、配置mysql相关的内容和连接池相关的内容
+```
+#datasource-mysql-数据库
+spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/imgr?useUnicode=true&characterEncoding=utf8&useSSL=false
+spring.datasource.username=imgr
+spring.datasource.password=imgr
+
+#datasource-pool-连接池
+spring.datasource.initialSize=5    
+spring.datasource.minIdle=5    
+spring.datasource.maxActive=20    
+spring.datasource.maxWait=60000    
+spring.datasource.timeBetweenEvictionRunsMillis=60000    
+spring.datasource.minEvictableIdleTimeMillis=300000    
+spring.datasource.validationQuery=SELECT 1 FROM DUAL    
+spring.datasource.testWhileIdle=true    
+spring.datasource.testOnBorrow=false    
+spring.datasource.testOnReturn=false    
+spring.datasource.poolPreparedStatements=true 
+spring.datasource.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+spring.datasource.filters=stat,wall
+```
+
+三、通过java配置sevlet、filter和datasource
+
+```
+@Configuration
+public class DataSourceConfig {
+	
+	@Bean
+	public ServletRegistrationBean datasourceServlet() {
+		ServletRegistrationBean registrationBean = new ServletRegistrationBean();
+		registrationBean.setServlet(new StatViewServlet());
+		registrationBean.addUrlMappings("/druid/*");
+		registrationBean.addInitParameter("allow", "127.0.0.1");  
+        registrationBean.addInitParameter("deny", "192.168.31.234"); 
+        //登录页面的用户名和密码
+        registrationBean.addInitParameter("loginUsername", "admin");  
+        registrationBean.addInitParameter("loginPassword", "123456");
+        //是否可以重置
+        registrationBean.addInitParameter("resetEnable", "false");  
+		return registrationBean;
+	} 
+	
+	@Bean
+	public FilterRegistrationBean datasourceFilter() {
+		FilterRegistrationBean registrationBean = new FilterRegistrationBean ();
+		registrationBean.setFilter(new WebStatFilter());
+		registrationBean.addUrlPatterns("/*");
+		registrationBean.addInitParameter("exclusions", "*.js, *.gif, *.jpg, *.png, *.css, *.ico, /druid/*, /login");
+		return registrationBean;
+	}
+	
+	public DataSource dataSource(
+			@Value("${spring.datasource.driver-class-name}") String driver,
+			@Value("${spring.datasource.url}") String url,
+			@Value("${spring.datasource.username}") String userName,
+			@Value("${spring.datasource.password}") String password,
+			@Value("${spring.datasource.maxActive}") int maxActive,
+			@Value("${spring.datasource.filters}") String filters
+		) {
+		DruidDataSource druidDataSource = new DruidDataSource();
+		druidDataSource.setDriverClassName(driver);
+		druidDataSource.setUrl(url);
+		druidDataSource.setUsername(userName);
+		druidDataSource.setPassword(password);
+		druidDataSource.setMaxActive(maxActive);
+		try {
+			druidDataSource.setFilters(filters);
+		}catch(Exception e) {
+			
+		}
+		return druidDataSource;
+	}
+
+}
+```
+
+四、dao相关的内容（省略）
+
+五、代码见文件夹2018-04-01/数据持久化/imgr
